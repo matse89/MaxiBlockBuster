@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <ul id="peliculas_ul"></ul>
+    <button class="btn btn-primary" id="peliculas_cargar" onclick="cargarLista()">CARGAR LISTA</button>
+    <input type="text" id="peliculas_input_nombre" />
+    <button class="btn btn-primary" id="peliculas_agregar" onclick="agregarNuevaPeli()">AGREGAR</button>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@section Scripts {
+    <script>
+
+
+        
+    async function cargarLista() {
+        $('#peliculas_ul').html(null);
+
+        const response = await fetch('/Home/Peliculas');
+
+        const result = await response.json();
+        console.log(result);
+
+        result.forEach(peli => {
+            const item = `<li>${peli.peliculaId} - ${peli.nombre}</li>`;
+
+            $('#peliculas_ul').append(item);
+        });
+    }
+
+    async function agregarNuevaPeli() {
+        const response = await fetch('/Home/NuevaPelicula', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json'},
+            body: JSON.stringify($('#peliculas_input_nombre').val())
+        });
+
+        $('#peliculas_input_nombre').val(null);
+
+        await cargarLista();
+    }
+
+    $(document).ready(()=> {
+        $('#peliculas_cargar').click(cargarLista);
+
+        cargarLista();
+    });
+</script>
+}

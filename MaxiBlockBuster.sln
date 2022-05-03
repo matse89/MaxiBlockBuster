@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxiBlockBuster", "MaxiBlockBuster\MaxiBlockBuster.csproj", "{8C701BDC-66D9-42FC-90FF-FF3DB37DBB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxiBlockBuster.Model", "MaxiBlockBuster.Model\MaxiBlockBuster.Model.csproj", "{A8462EA8-B7D4-4F60-971D-47A2FD6A27CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxiBlockBuster.BLL", "MaxiBlockBuster.BLL\MaxiBlockBuster.BLL.csproj", "{DCD48091-DFFD-48AF-B62B-B70E6B060CE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxiBlockBuster.DAL", "MaxiBlockBuster.DAL\MaxiBlockBuster.DAL.csproj", "{DC17CB99-5F1C-48AB-92C8-258CF9F93B01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C701BDC-66D9-42FC-90FF-FF3DB37DBB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C701BDC-66D9-42FC-90FF-FF3DB37DBB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C701BDC-66D9-42FC-90FF-FF3DB37DBB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C701BDC-66D9-42FC-90FF-FF3DB37DBB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8462EA8-B7D4-4F60-971D-47A2FD6A27CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8462EA8-B7D4-4F60-971D-47A2FD6A27CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8462EA8-B7D4-4F60-971D-47A2FD6A27CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8462EA8-B7D4-4F60-971D-47A2FD6A27CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD48091-DFFD-48AF-B62B-B70E6B060CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD48091-DFFD-48AF-B62B-B70E6B060CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD48091-DFFD-48AF-B62B-B70E6B060CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD48091-DFFD-48AF-B62B-B70E6B060CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC17CB99-5F1C-48AB-92C8-258CF9F93B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC17CB99-5F1C-48AB-92C8-258CF9F93B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC17CB99-5F1C-48AB-92C8-258CF9F93B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC17CB99-5F1C-48AB-92C8-258CF9F93B01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA0684C5-BA83-42E8-8B7B-903B42AE73D8}
+	EndGlobalSection
+EndGlobal
